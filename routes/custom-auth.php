@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CustomUser\Auth\VerifyEmailController;
 use App\Http\Controllers\CustomUser\Auth\RegisteredUserController;
 use App\Http\Controllers\CustomUser\Auth\EmailVerificationPromptController;
 use App\Http\Controllers\CustomUser\Auth\EmailVerificationNotificationController;
