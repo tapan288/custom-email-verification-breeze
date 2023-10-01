@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomUser\Auth\RegisteredUserController;
 use App\Http\Controllers\CustomUser\Auth\EmailVerificationPromptController;
+use App\Http\Controllers\CustomUser\Auth\EmailVerificationNotificationController;
 
 Route::get('custom-user/dashboard', function () {
     return view('custom-auth.dashboard');
