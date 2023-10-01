@@ -1,4 +1,7 @@
-x-guest-layout>
+<x-guest-layout>
+    <div>
+        Custom User Registration
+    </div>
     <form method="POST" action="{{ route('custom-user.register') }}">
         @csrf
 

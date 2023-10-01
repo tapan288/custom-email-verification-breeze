@@ -3,6 +3,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomUser\Auth\RegisteredUserController;
 
+Route::get('custom-user/dashboard', function () {
+    return view('custom-auth.dashboard');
+})->middleware(['customUserAuth', 'verified'])->name('custom-user.dashboard');
+
 Route::group([
     'middleware' => ['guest:customUserAuth'],
     'as' => 'custom-user.',
